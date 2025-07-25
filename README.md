@@ -37,10 +37,11 @@ This project uses Power BI to analyze sales and performance data for an e-commer
 ---
 
 ## 🔍 Insights
+1. Technology has the highest sales among all categories.
 
-1. 📈 Sales increased steadily over the last 6 months.
-2. 🛒 Electronics and Furniture categories generated the highest revenue.
-3. 🌍 The South region showed the most consistent growth in customer orders.
+2. Home Office segment gives the most profit (~47%).
+
+3. Sales and orders are increasing year by year (2011–2014).
 
 ---
 
