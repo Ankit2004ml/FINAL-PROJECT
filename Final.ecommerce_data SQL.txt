@@ -1,0 +1,27 @@
+SELECT * FROM final.ecommerce_data;
+SELECT COUNT(*) FROM ecommerce_data;
+-- Show top 10 best-selling products based on sales
+SELECT Product_Name, 
+       SUM(Sales) AS Total_Sales
+FROM ecommerce_data
+GROUP BY Product_Name
+ORDER BY Total_Sales DESC
+LIMIT 10;
+-- Calculate total profit from each region
+SELECT Region, 
+       SUM(Profit) AS Total_Profit
+FROM ecommerce_data
+GROUP BY Region;
+-- Monthly sales trend using order date
+SELECT DATE_FORMAT(Order_Date, '%Y-%m') AS Month, 
+       SUM(Sales) AS Monthly_Sales
+FROM ecommerce_data
+GROUP BY Month
+ORDER BY Month;
+-- 🟩 Top 10 Months with Highest Total Sales
+SELECT DATE_FORMAT(Order_Date, '%Y-%m') AS Month,
+       SUM(Sales) AS Monthly_Sales
+FROM ecommerce_data
+GROUP BY Month
+ORDER BY Monthly_Sales DESC
+LIMIT 10;
